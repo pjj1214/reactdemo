@@ -11,7 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <h1>我是根组件</h1> */}
-      ryancheckout
+      devcheckout
       <Home>
       </Home>
       <News>
