@@ -3,6 +3,7 @@ import logo from './asserts/images/logo.svg';
 import './asserts/css/App.css';
 import Home from './componnets/Home'
 import News from './componnets/News'
+import Day5 from './componnets/Day5'
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       devcheckout
       <Home>
       </Home>
-      <News>
-      </News>
+      {/* <News>
+      </News> */}
+      <Day5 />
     </div>
 
   );
