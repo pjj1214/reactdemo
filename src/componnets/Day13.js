@@ -25,12 +25,16 @@ class Day13 extends Component {
   componentDidUpdate() {
     console.log('did update')
   }
+  componentWillReceiveProps() {
+    console.log('will recive props')
+  }
   changeMsg = () => {
     this.setState({
       msg: '修改后的msg'
     })
   }
   render() {
+    console.log('render')
     return (
       <div>
         Day13  {this.state.msg} <button onClick={this.changeMsg}>修改msg</button>

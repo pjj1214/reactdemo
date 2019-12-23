@@ -10,6 +10,7 @@ import Day8 from './componnets/Day8'
 import Day10 from './componnets/Day10'
 import Day12 from './componnets/Day12'
 import Day13 from './componnets/Day13'
+import Day14 from './componnets/Day14'
 //函数组件与class组件的区别
 // function App() {
 //   let flag = true;
@@ -42,13 +43,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      flag: true
+      flag: true,
+      title: '我是App组件title'
     };
   }
   changeFlag = ()=> {
-    console.log('flag');
     this.setState({
        flag: !this.state.flag
+    })
+  }
+  setTitle = () => {
+    this.setState({
+      title: '改变后的title'
     })
   }
   render() {
@@ -68,7 +74,10 @@ class App extends Component {
       {/* <Day8/>
       <Day10/> */}
       {/* <Day12/> */}
-      {this.state.flag?<Day13/>:''} <button onClick={this.changeFlag}>修改flag</button>
+      {this.state.flag?<Day13 title={this.state.title} />:''} <button onClick={this.changeFlag}>修改flag</button>
+      <button onClick={this.setTitle}>修改title</button>
+
+      <Day14/>
     </div>
     );
   }
