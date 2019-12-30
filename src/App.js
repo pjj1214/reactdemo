@@ -79,6 +79,7 @@ class App extends Component {
 
       <Day14/>
       123123
+      66666
     </div>
     );
   }
