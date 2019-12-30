@@ -78,6 +78,7 @@ class App extends Component {
       <button onClick={this.setTitle}>修改title</button>
 
       <Day14/>
+      123123
     </div>
     );
   }
