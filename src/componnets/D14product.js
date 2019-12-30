@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
-class D14news extends Component {
+class D14product extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -28,7 +28,7 @@ class D14news extends Component {
                   this.state.list.map((item,key) => {
                     return (
                       <li key={key}>
-                        <Link to={`/content/${item.aid}`}>{item.title}</Link>
+                        <Link to={`/productcontent?aid=${item.aid}`}>{item.title}</Link>
                       </li>
                     )
                   })
@@ -39,4 +39,4 @@ class D14news extends Component {
     }
 }
 
-export default D14news
+export default D14product
