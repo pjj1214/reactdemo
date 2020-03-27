@@ -7,7 +7,7 @@ class Day5 extends Component {
             test:'abc'
         }
     }
-    run=(e) =>{
+    run=(e,val) =>{
         console.log(e)
     }
     valChange=(e) => {

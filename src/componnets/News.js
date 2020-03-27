@@ -18,6 +18,7 @@ class News extends React.Component {
     return (<div>{this.state.news}
         <div className='news'>news</div>
         <div style={{color:'blue'}}>test style</div>
+        <div style={{fontSize:'50px'}}>字体大小</div>
         <div style={{backgroundColor:this.state.color}}>bgc red</div>
         <img src={logo} alt='' width='100'/>
         <label htmlFor='name'>姓名</label>
