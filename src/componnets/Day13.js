@@ -5,13 +5,13 @@ class Day13 extends Component {
     this.state = {msg: '修改前的msg'};
     console.log('01 构造函数')
   }
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     console.log('02 willMount')
   }
   componentDidMount() {
     console.log('03 didMount')
   }
-  componentWillUnmount() {
+  UNSAFE_componentWillUnmount() {
     console.log('unMount')
   }
   shouldComponentUpdate(nextProps, nextState) {
@@ -19,13 +19,13 @@ class Day13 extends Component {
     console.log(nextProps, nextState)
     return true
   }
-  componentWillUpdate() {
+  UNSAFE_componentWillUpdate() {
     console.log('will update')
   }
   componentDidUpdate() {
     console.log('did update')
   }
-  componentWillReceiveProps() {
+  UNSAFE_componentWillReceiveProps() {
     console.log('will recive props')
   }
   changeMsg = () => {

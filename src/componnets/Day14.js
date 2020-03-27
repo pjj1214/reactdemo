@@ -14,8 +14,8 @@ class Day14 extends Component {
     render() {
         return (
             <Router>
-            <div>
-                <h1>day14 Home</h1>
+  
+                <h1>Home</h1>
                 <Link to='/'>主页</Link>
                 <br/>
                 <Link to='/news'>新闻</Link>
@@ -29,8 +29,7 @@ class Day14 extends Component {
                 <Route path="/product" component={D14product} />
                 <Route path='/content/:aid' component={D14newscontent}></Route>
                 <Route path='/productcontent' component={D14productcontent}></Route>
-                
-            </div>
+
             </Router>
         );
     }

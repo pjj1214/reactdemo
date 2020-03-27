@@ -14,7 +14,7 @@ class Header extends Component {
         return (
             <div>
                 我是header组件
-    <h1>{this.props.name}{this.props.num}</h1>
+    <h1>{this.props.name}<br></br>{this.props.num}</h1>
             <p>{this.props.title}</p>
             <button onClick={this.props.run}>调用父组件的run方法</button>
             <button onClick={this.props.day10.run}>把父组件拿过来用</button>

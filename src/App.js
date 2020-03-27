@@ -72,12 +72,12 @@ class App extends Component {
       {/* <Day6 /> */}
       {/* <Day7/> */}
       {/* <Day8/> */}
-      <Day10/>
+      {/* <Day10/> */}
       {/* <Day12/> */}
       {/* {this.state.flag?<Day13 title={this.state.title} />:''} <button onClick={this.changeFlag}>修改flag</button>
       <button onClick={this.setTitle}>修改title</button> */}
 
-      {/* <Day14/> */}
+      <Day14/>
     </div>
     );
   }

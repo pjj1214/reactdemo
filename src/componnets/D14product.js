@@ -22,7 +22,7 @@ class D14product extends Component {
     render() {
         return (
             <div>
-                <h1>News</h1>
+                <h1>Product</h1>
                 <ul>
                 {
                   this.state.list.map((item,key) => {
